@@ -1,0 +1,22 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $('.elementor-button').on('click', function(e) {
+            e.preventDefault();
+            
+            Swal.fire({
+                icon: 'success',
+                title: 'متن عنوان SweetAlert2',
+                text: 'متن پیام SweetAlert2',
+                showCancelButton: true,
+                cancelButtonText: 'بستن',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'تایید'
+            }).then(function(result) {
+                if (result.value) {
+                    // Your custom code here
+                }
+            });
+        });
+    });
+</script>
